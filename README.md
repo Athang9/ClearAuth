@@ -53,23 +53,18 @@ python src/pipeline.py data/synthetic_pdfs/case_001_PT_10042.pdf
 
 ## Architecture
 
-```
-Clinical Note PDF
-      ↓
-[document_intake.py]   — pypdf extracts text → Groq LLM extracts structured fields
-      ↓
-[pa_engine.py]         — loads payer policy JSON → scores request → returns decision
-      ↓
-   Decision
-   ↙      ↘
-APPROVED   DENIED → [appeals_generator.py] → formal appeal letter (.txt)
-      ↓
-[audit_logger.py]      — logs every action to SQLite (HIPAA audit trail pattern)
-      ↓
-[dashboard/]           — live ops dashboard at http://localhost:8000
-```
+## Architecture
+
+![ClearAuth Architecture](docs/architecture.png)
 
 ---
+
+## Dashboard
+
+![ClearAuth Dashboard](docs/dashboard.png)
+
+![Appeal Letter View](docs/appeal_letter.png)
+![Appeal Letter View](docs/appeal_letter1.png)
 
 ## Test results
 
