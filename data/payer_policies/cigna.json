@@ -1,0 +1,10 @@
+{
+  "payer": "Cigna",
+  "approved_procedures": ["99213", "70553", "93306"],
+  "required_criteria": {
+    "diagnosis_codes": ["M16.12", "K21.0", "I25.10"],
+    "min_justification_length": 80
+  },
+  "appeal_window_days": 60,
+  "notes": "Synthetic policy for demo purposes only."
+}

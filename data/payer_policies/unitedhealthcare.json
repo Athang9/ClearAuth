@@ -1,0 +1,10 @@
+{
+  "payer": "UnitedHealthcare",
+  "approved_procedures": ["99213", "99214", "27447", "70553", "93306", "43239", "27130", "29827"],
+  "required_criteria": {
+    "diagnosis_codes": ["M16.11", "M16.12", "I25.10", "M75.1", "M75.121"],
+    "min_justification_length": 60
+  },
+  "appeal_window_days": 60,
+  "notes": "Synthetic policy for demo purposes only."
+}

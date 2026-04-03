@@ -1,0 +1,10 @@
+{
+  "payer": "Aetna",
+  "approved_procedures": ["99214", "27447", "70553", "93306", "22551", "29881"],
+  "required_criteria": {
+    "diagnosis_codes": ["M16.11", "I25.10", "M75.1"],
+    "min_justification_length": 80
+  },
+  "appeal_window_days": 45,
+  "notes": "Synthetic policy for demo purposes only."
+}
